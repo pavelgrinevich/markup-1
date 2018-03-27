@@ -26,6 +26,25 @@ html, body {
     padding: 0;
 }
 
+h2 {
+    font-family: "YesevaOne";
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 1.32;
+}
+
+h3 {
+    font-family: "YesevaOne";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .59) 0%,
                                                  rgba(0, 0, 0, .23) 54%,
@@ -110,13 +129,6 @@ main {
     height: 750px;
 }
 
-h2 {
-    font-family: "YesevaOne";
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 1.32;
-}
-
 .promo .text {
     position: absolute;
     top: 139px;
@@ -186,26 +198,13 @@ button:hover {
     text-align: center;
 }
 
-h3 {
-    font-family: "YesevaOne";
-    font-size: 36px;
-    font-weight: 400;
-}
-
-p {
-    font-family: "Lato";
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 .cook h3 {
     color: rgb(204, 153, 0);
     line-height: 1.3;
 }
 
-.cook h3::after {
+.cook h3:after {
     content: url("../images/gold-divider.png");
-    margin-top: 40px;
 }
 
 .cook p {
@@ -225,11 +224,96 @@ p {
     left: 739px;
 }
 
-section.ingredients {
+.ingredients {
+    position: relative;
     background-image: url("../images/ingredients-bg.png");
     width: 100%;
-    height: 1068px;
+    height: 760px;
+}
+
+.ingredients .content {
+    position: absolute;
+    top: 100px;
+    left: 815px;
+    height: 557px;
+    width: 570px;
+    background-color: rgba(0, 0, 0, .6);
     text-align: center;
+}
+
+.content h3 {
+    position: relative;
+    top: 34px;
+    left: 5px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+.content h3:after {
+    position: relative;
+    top: -6px;
+    left: -5px;
+    content: url("../images/white-divider.png");
+}
+
+.content p {
+    position: relative;
+    top: 1px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 420px;
+}
+
+.content .wheat {
+    position: absolute;
+    top: 369px;
+    left: 90px;
+    height: 100px;
+    width: 100px;
+    border: 5px rgba(255, 255, 255, .09) solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .spice {
+    position: absolute;
+    top: 369px;
+    left: 230px;
+    height: 100px;
+    width: 100px;
+    border: 5px rgba(255, 255, 255, .09) solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .bread {
+    position: absolute;
+    top: 369px;
+    left: 370px;
+    height: 100px;
+    width: 100px;
+    border: 5px rgba(255, 255, 255, .09) solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .wheat img {
+    position: absolute;
+    top: -31px;
+    left: -45px;
+}
+
+.content .spice img {
+    position: absolute;
+    top: -89px;
+    left: -42px;
+}
+
+.content .bread img {
+    position: absolute;
+    top: -16px;
+    left: -43px;
 }
 
 section.menu {
