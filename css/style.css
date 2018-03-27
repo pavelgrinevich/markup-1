@@ -39,6 +39,12 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-family: "YesevaOne";
+    font-size: 21px;
+    font-weight: 400;
+}
+
 p {
     font-family: "Lato";
     font-size: 16px;
@@ -394,17 +400,83 @@ section.reservations {
 }
 
 footer {
+    position: relative;
     background-color: rgb(25, 25, 25);
     color: rgb(255, 255, 255);
     margin: auto;
     width: 1600px;
     height: 320px;
+    text-align: center;
 }
 
-.payment a {
-    color: white;
+footer .about-us {
+    position: absolute;
+    top: 29px;
+    left: 210px;
+    height: 200px;
+    width: 380px;
+}
+
+footer .about-us h4:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../images/footer-divider.png");
+}
+
+footer .hours {
+    position: absolute;
+    top: 29px;
+    left: 691px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .hours h4:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../images/footer-divider.png");
+}
+
+footer p {
+    position: relative;
+    top: 1px;
+    font-family: "OpenSans";
+    font-size: 16px;
+}
+
+footer .location p {
+    letter-spacing: .5px;
+}
+
+footer .location {
+    position: absolute;
+    top: 29px;
+    left: 1091px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .location h4:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../images/footer-divider.png");
+}
+
+footer .payment a {
+    position: relative;
+    top: 35px;
+    left: 3px;
+    color: rgb(255, 255, 255);
+    padding: 0px 4px;
 }
 
 footer .social a {
+    position: relative;
+    top: 35px;
+    left: 4px;
     color: rgb(255, 255, 255);
+    padding: 0px 4px;
 }
