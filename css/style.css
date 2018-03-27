@@ -169,18 +169,67 @@ button:hover {
     cursor: pointer;
 }
 
-section.about {
+.about {
+    position: relative;
     background-image: linear-gradient(133deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, .09)), 
                       url("../images/about-pattern-bg.png");
     box-shadow: inset 0px 0px 50px 0px rgba(1, 1, 1, 0.14);
     width: 100%;
-    height: 1000px;
+    height: 710px;
+}
+
+.about .cook {
+    position: absolute;
+    top: 61px;
+    left: 295px;
+    width: 408px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "YesevaOne";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.cook h3 {
+    color: rgb(204, 153, 0);
+    line-height: 1.3;
+}
+
+.cook h3::after {
+    content: url("../images/gold-divider.png");
+    margin-top: 40px;
+}
+
+.cook p {
+    position: relative;
+    top: -20px;
+}
+
+.cook img {
+    position: relative;
+    left: 35px;
+    top: 13px;  
+}
+
+.about .dish {
+    position: absolute;
+    top: 54px;
+    left: 739px;
 }
 
 section.ingredients {
     background-image: url("../images/ingredients-bg.png");
     width: 100%;
     height: 1068px;
+    text-align: center;
 }
 
 section.menu {
