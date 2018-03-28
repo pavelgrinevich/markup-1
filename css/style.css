@@ -14,6 +14,21 @@
 }
 
 @font-face {
+    font-family: "OpenSansItalic";
+    src: url("../fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
     font-family: "Lato";
     src: url("../fonts/Lato-Regular.ttf");
 }
@@ -363,7 +378,7 @@ button:hover {
 
 .menu .item-special {
     position: relative;
-    border: 1px rgba(204, 153, 0, .4) solid;
+    border: 1px rgba(204, 153, 0, .3) solid;
     margin: 18px 0 15px 0;
     padding: 6px 10px 8px 11px;
 }
@@ -480,12 +495,189 @@ button:hover {
     font-size: 18px;
 }
 
-section.reservations {
+.reservations {
+    position: relative;
     background-image: linear-gradient(163deg, rgba(255, 255, 255, 0), rgba(12, 52, 53, .07)), 
                       url("../images/reservations-pattern-bg.png");
     box-shadow: inset 0px 0px 50px 0px rgba(1, 1, 1, 0.05);
     width: 100%;
-    height: 1000px;
+    height: 710px;
+}
+
+.reservations figure {
+    position: absolute;
+    top: 84px;
+    left: 175px;
+    height: 507px;
+}
+.reservations figure img {
+    margin-right: 26px;
+}
+
+.reservations form {
+    position: absolute;
+    top: 96px;
+    left: 892px;
+    width: 415px;
+    height: 507px;
+}
+
+.reservations form h3 {
+    color: rgb(204, 153, 0);
+    text-align: center;
+    margin: 0;
+}
+
+.reservations form h3::after {
+    position: relative;
+    top: 5px;
+    left: -1px;
+    content: url("../images/gold-divider.png");
+}
+
+.reservations form p {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.reservations form p + p {
+    margin-top: -6px;
+}
+
+.reservations form label {
+    font-family: "OpenSansBold";
+    font-size: 14px;
+    color: rgb(204, 153, 0);
+}
+
+.reservations form input, .reservations form select {
+    width: 182px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px rgb(200, 200, 200) solid;
+    font-family: "OpenSansItalic";
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.reservations form .label-name {
+    position: absolute;
+    top: 298px;
+    left: -7px;
+}
+
+.reservations form .label-email {
+    position: absolute;
+    top: 298px;
+    left: 222px;
+}
+
+.reservations form .label-date {
+    position: absolute;
+    top: 383px;
+    left: -7px;
+}
+
+.reservations form .label-party {
+    position: absolute;
+    top: 383px;
+    left: 222px;
+}
+
+.reservations form .name {
+    position: absolute;
+    top: 323px;
+    left: -7px;
+}
+
+.reservations form .email {
+    position: absolute;
+    top: 323px;
+    left: 223px;
+    width: 183px;
+}
+
+.reservations form .onblur, .reservations form .onfocus {
+    position: absolute;
+    top: 406px;
+    left: -7px;
+    width: 183px;
+    height: 34px;
+}
+
+.reservations form .onblur::before {
+    color: rgb(124, 124, 124);
+    content: attr(placeholder);
+}
+
+.reservations form .onblur::-webkit-calendar-picker-indicator,
+.reservations form .onfocus::-webkit-calendar-picker-indicator {
+    position: relative;
+    left: -3px;
+    color: transparent;
+    opacity: 1;
+    background: url("../images/reservations-date-icon.png") no-repeat;
+}
+
+.reservations form .onblur::-webkit-inner-spin-button,
+.reservations form .onfocus::-webkit-inner-spin-button { 
+    display: none; 
+}
+
+.reservations form .onblur::-webkit-clear-button,
+.reservations form .onfocus::-webkit-clear-button {
+    display: none;
+}
+
+.reservations form .onblur::-webkit-datetime-edit {
+    visibility: hidden;
+}
+
+.reservations form .onfocus::-webkit-datetime-edit {
+    visibility: visible;
+}
+
+.reservations form .party {
+    position: absolute;
+    top: 406px;
+    left: 223px;
+    width: 200px;
+    height: 36px;
+    padding-left: 14px;
+
+    -webkit-appearance: none;
+    background-image: url('../images/reservations-select-icon.png');
+    background-position: 176px center;
+    background-repeat: no-repeat;
+}
+
+.reservations form .party:invalid {
+    color: rgb(124, 124, 124);
+}
+
+.reservations form .party option + option {
+    color: rgb(0, 0, 0);
+}
+
+.reservations form .name:focus,
+.reservations form .email:focus,
+.reservations form .onfocus:focus,
+.reservations form .party:focus {
+    outline: none;
+    border: 1px rgb(200, 159, 45) solid;
+}
+
+.reservations form button {
+    position: absolute;
+    top: 475px;
+    left: 109px;
+    width: 200px;
+    height: 36px;
+    background-color: rgb(201, 161, 49);
+    border-width: 0px;
+    font-family: "OpenSansLight";
+    font-size: 16px;
+    color: rgb(255, 255, 255);
 }
 
 footer {
