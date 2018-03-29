@@ -1,36 +1,55 @@
 @font-face {
-    font-family: "YesevaOne";
-    src: url("../fonts/YesevaOne-Regular.ttf");
-}
-
-@font-face {
-    font-family: "GentiumBasic";
-    src: url("../fonts/GenBasB.ttf");
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+         url("../fonts/OpenSans-Regular.woff") format("woff"),
+         url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("../fonts/OpenSans.ttf");
+    src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+         url("../fonts/OpenSans-Bold.woff") format("woff"),
+         url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "OpenSansItalic";
-    src: url("../fonts/OpenSans-Italic.ttf");
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+         url("../fonts/OpenSans-Italic.woff") format("woff"),
+         url("../fonts/OpenSans-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "OpenSansLight";
-    src: url("../fonts/OpenSans-Light.ttf");
-}
-
-@font-face {
-    font-family: "OpenSansBold";
-    src: url("../fonts/OpenSans-Bold.ttf");
+    font-family: "YesevaOne";
+    src: url("../fonts/YesevaOne-Regular.woff2") format("woff2"),
+         url("../fonts/YesevaOne-Regular.woff") format("woff"),
+         url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("../fonts/Lato-Regular.ttf");
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+         url("../fonts/Lato-Regular.woff") format("woff"),
+         url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GentiumBasic";
+    src: url("../fonts/GenBasB.woff2") format("woff2"),
+         url("../fonts/GenBasB.woff") format("woff"),
+         url("../fonts/GenBasB.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 html, body {
@@ -41,29 +60,24 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    display: none;
+}
+
 h2 {
-    font-family: "YesevaOne";
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 1.32;
+    font: normal 90px/1.32 "YesevaOne";
 }
 
 h3 {
-    font-family: "YesevaOne";
-    font-size: 36px;
-    font-weight: 400;
+    font: normal 36px "YesevaOne";
 }
 
 h4 {
-    font-family: "YesevaOne";
-    font-size: 21px;
-    font-weight: 400;
+    font: normal 21px "YesevaOne";
 }
 
 p {
-    font-family: "Lato";
-    font-size: 16px;
-    line-height: 1.5;
+    font: normal 16px/1.5 "Lato";
 }
 
 header {
@@ -74,19 +88,17 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 0 auto;
     width: 1600px;
     height: 159px;
     z-index: 1;
 }
 
-.logo {
+header .logo {
     position: absolute;
     left: 178px;
     top: 40px;
-
-    font-family: "YesevaOne";
-    font-size: 36px;
+    font: normal 36px "YesevaOne";
     text-transform: uppercase;
     background: url("../images/logo-mask.png");
     color: transparent;
@@ -94,31 +106,30 @@ header {
     -webkit-background-clip: text;
 }
 
-nav {
+header nav {
     position: absolute;
-    left: 552px;
+    left: 560px;
 }
 
-nav a {
+header nav a {
     display: inline-block;
-    border: 0 rgba(255, 255, 255, .71) solid;
+    border: 0px rgba(255, 255, 255, .71) solid;
     min-width: 68px;
     padding: 49px 6px 0;
-    margin: 0 10px;
-
-    font-family: "GentiumBasic";
-    font-size: 21px;
+    margin: 0 28px 0 0;
+    font: normal 21px "GentiumBasic";
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
 }
 
-nav .active {
+header nav .active {
     border-width: 3px 0 0;
     padding-top: 46px;
+    margin: 0 23px 0 0;
 }
 
-nav a:hover {
+header nav a:hover {
     border-width: 3px 0 0;
     padding-top: 46px;
 }
@@ -139,7 +150,7 @@ header .social a {
 main {
     position: relative;
     background-color: rgb(255, 255, 255);
-    margin: auto;
+    margin: 0 auto;
     width: 1600px;
     min-height: calc(100% - 320px);
 }
@@ -171,9 +182,8 @@ main {
 .promo .buttons {
     position: absolute;
     top: 551px;
-    left: 542px;
+    left: 543px;
     width: 520px;
-    font-family: "Lato";
 }
 
 .promo .buttons .black {
@@ -181,11 +191,10 @@ main {
     border: 1px rgba(0, 0, 0, .8) solid;
     width: 228px;
     height: 57px;
-    margin: 0 14px;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+    margin: 0 13px;
+    font: normal 18px "Lato";
     text-transform: uppercase;
-    
+    color: rgb(255, 255, 255);
 }
 
 .promo .buttons .white {
@@ -193,10 +202,10 @@ main {
     border: 1px rgba(255, 255, 255, .7) solid;
     width: 228px;
     height: 57px;
-    margin: 0 14px;
-    font-size: 17px;
-    color: rgb(255, 255, 255);
+    margin: 0 13px;
+    font: normal 18px "Lato";
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 button:hover {
@@ -214,10 +223,12 @@ button:hover {
 
 .about .cook {
     position: absolute;
-    top: 61px;
+    top: 62px;
     left: 295px;
     width: 408px;
+    height: 100%;
     text-align: center;
+    overflow: hidden;
 }
 
 .cook h3 {
@@ -226,6 +237,9 @@ button:hover {
 }
 
 .cook h3:after {
+    position: relative;
+    top: 1px;
+    left: -1px;
     content: url("../images/gold-divider.png");
 }
 
@@ -242,7 +256,7 @@ button:hover {
 
 .about .dish {
     position: absolute;
-    top: 54px;
+    top: 55px;
     left: 739px;
 }
 
@@ -250,7 +264,7 @@ button:hover {
     position: relative;
     background-image: url("../images/ingredients-bg.png");
     width: 100%;
-    height: 760px;
+    height: 758px;
 }
 
 .ingredients .content {
@@ -261,6 +275,7 @@ button:hover {
     width: 570px;
     background-color: rgba(0, 0, 0, .6);
     text-align: center;
+    overflow: hidden;
 }
 
 .ingredients .content h3 {
@@ -439,7 +454,7 @@ button:hover {
     background-image: url("../images/reviews-bg.png");
     background-position-y: -264px;
     width: 100%;
-    height: 750px;
+    height: 758px;
 }
 
 .reviews .content {
@@ -450,6 +465,7 @@ button:hover {
     width: 770px;
     background-image: url("../images/reviews-content-bg.png");
     text-align: center;
+    overflow: hidden;
 }
 
 .reviews .content h3 {
@@ -468,11 +484,10 @@ button:hover {
 
 .reviews .content .quotation-mark {
     position: absolute;
-    top: 43px;
+    top: 59px;
     left: 28px;
-    font-family: "Georgia";
+    font: normal 90px "Georgia";
     color: rgba(255, 255, 255, .47);
-    font-size: 90px;
 }
 
 .reviews .content .qoute-text {
@@ -480,11 +495,10 @@ button:hover {
     top: 151px;
     left: 70px;
     width: 630px;
-    font-family: "GentiumBasic";
+    font: normal 25px/1.8 "GentiumBasic";
+    word-spacing: 1px;
     color: rgb(221, 224, 223);
     font-size: 25px;
-    line-height: 1.8;
-    word-spacing: 1px;
 }
 
 .reviews .content .quote-author {
@@ -545,8 +559,7 @@ button:hover {
 }
 
 .reservations form label {
-    font-family: "OpenSansBold";
-    font-size: 14px;
+    font: bold 14px "OpenSans";
     color: rgb(204, 153, 0);
 }
 
@@ -555,8 +568,7 @@ button:hover {
     height: 32px;
     background-color: rgba(255, 255, 255, .4);
     border: 1px rgb(200, 200, 200) solid;
-    font-family: "OpenSansItalic";
-    font-size: 16px;
+    font: italic 16px "OpenSans";
     padding-left: 15px;
 }
 
@@ -675,8 +687,7 @@ button:hover {
     height: 36px;
     background-color: rgb(201, 161, 49);
     border-width: 0px;
-    font-family: "OpenSansLight";
-    font-size: 16px;
+    font: normal 17px "OpenSans";
     color: rgb(255, 255, 255);
 }
 
@@ -693,15 +704,14 @@ footer {
 footer .about-us {
     position: absolute;
     top: 29px;
-    left: 210px;
+    left: 212px;
     height: 200px;
-    width: 380px;
+    width: 375px;
 }
 
 footer .about-us h4:after {
     position: relative;
     top: 16px;
-    left: -1px;
     content: url("../images/footer-divider.png");
 }
 
@@ -723,12 +733,13 @@ footer .hours h4:after {
 footer p {
     position: relative;
     top: 1px;
-    font-family: "OpenSans";
-    font-size: 16px;
+    font: normal 17px "OpenSans";
+    word-spacing: -1px;
+    line-height: 1.45;
 }
 
 footer .location p {
-    letter-spacing: .5px;
+    letter-spacing: 0px;
 }
 
 footer .location {
@@ -748,7 +759,7 @@ footer .location h4:after {
 
 footer .payment a {
     position: relative;
-    top: 35px;
+    top: 34px;
     left: 3px;
     color: rgb(255, 255, 255);
     padding: 0px 4px;
@@ -756,7 +767,7 @@ footer .payment a {
 
 footer .social a {
     position: relative;
-    top: 35px;
+    top: 34px;
     left: 4px;
     color: rgb(255, 255, 255);
     padding: 0px 4px;

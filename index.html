@@ -10,28 +10,22 @@
     <header>
         <div class="logo">lambda</div>
         <nav>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#ingredients">Ingredients</a>
-            <a href="#menu">Menu</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#reservations">Reservations</a>
+            <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#ingredients">Ingredients</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#reservations">Reservations</a>
         </nav>
         <div class="social">
-            <a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            <a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
     </header>
     <main>
-        <section class="promo">
+        <h1>lambda restaurant</h1>
+        <section id="home" class="promo">
             <div class="text"><h2>the right ingredients for the right food</h2></div>
             <div class="buttons">
                 <button class="black">book a table</button>
                 <button class="white">see the menu</button>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="cook">
                 <h3>Just the right food</h3>
                 <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
@@ -41,7 +35,7 @@
                 <img src="./images/about-dish.png" alt="dish">
             </div>
         </section>
-        <section class="ingredients">
+        <section id="ingredients" class="ingredients">
             <div class="content">
                 <h3>Fine ingredients <br /></h3>
                 <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
@@ -56,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="menu">
+        <section id="menu" class="menu">
             <div class="first-column">
                 <div class="group">
                     <h3>Appetisers<br /></h3>
@@ -88,8 +82,7 @@
                         <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
                     </div>
                 </div>
-            </div>
-            <div class="second-column">
+            </div><div class="second-column">
                 <div class="group">
                         <h3>Starters<br /></h3>
                         <div class="item">
@@ -122,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <div class="content">
                 <h3>Guest Reviews<br /></h3>
                 <p class="quotation-mark">“</p>
@@ -130,7 +123,7 @@
                 <P class="quote-author">- food inc, New York</P>
             </div>
         </section>
-        <section class="reservations">
+        <section id="reservations" class="reservations">
             <figure>
                 <img src="./images/reservations-image2.png" alt="image of dessert">
                 <img src="./images/reservations-image1.png" alt="image of dessert">
@@ -143,41 +136,42 @@
                 <label class="label-email">Email</label>
                 <label class="label-date">Date</label>
                 <label class="label-party">Party number</label>
-                <input class="name" type="name" placeholder="your name *">
-                <input class="email" type="email" placeholder="your email *">
+                <input class="name" type="name" placeholder="your name *" required>
+                <input class="email" type="email" placeholder="your email *" required>
                 <input class="onblur" type="date" placeholder="date *" onfocus="this.className='onfocus'" required>
                 <select class="party" required>
-                    <option value="" selected disabled hidden>party number</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="" selected>party number</option>
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="2">more</option>
                 </select>
-                <button>Book now!</button>
+                <button type="submit">Book now!</button>
             </form>
         </section>
     </main>
     <footer>
         <div class="about-us">
             <h4>About Us<br /></h4>
-            <p>Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br />Lamda the best restaurant in town</p>
+            <p>Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br />Lamda the best restaurant in town</p>
         </div>
         <div class="hours">
             <h4>Opening Hours<br /></h4>
-            <p><b>Mon-Thu:</b> 7:00am-8:00pm <b>Fri-Sun:</b> 7:00am-10:00pm</p>
+            <p><strong>Mon-Thu:</strong> 7:00am-8:00pm <strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
             <div class="payment">
-                <a href="#amex"><i class="fa fa-cc-amex" aria-hidden="true"></i></i></a>
-                <a href="#paypal"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
-                <a href="#visa"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
-                <a href="#discover"><i class="fa fa-cc-discover" aria-hidden="true"></i></a>
+                <a href="https://americanexpress.com/" target="_blank"><i class="fa fa-cc-amex" aria-hidden="true"></i></i></a>
+                <a href="https://paypal.com/" target="_blank"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
+                <a href="https://visa.com/" target="_blank"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+                <a href="https://discover.com/" target="_blank"><i class="fa fa-cc-discover" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="location">
             <h4>Our Location<br /></h4>
-            <p><b>19th Paradise Street Sitia 128 Meserole Avenue</b></p>
+            <p><strong>19th Paradise Street Sitia 128 Meserole Avenue</strong></p>
             <div class="social">
-                <a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                <a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#trello"><i class="fa fa-trello" aria-hidden="true"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://trello.com/" target="_blank"><i class="fa fa-trello" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
